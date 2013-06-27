@@ -103,7 +103,10 @@ img { margin: 0; padding: 0; border: none }
 .section a.next_btn { right: 0px; background-position: 50px 0 }
 
 .box { float: left; margin: 0 10px 10px 0 }
-#home_about { width: 314px; height: 314px }
+#home_about { width: 314px; height: 314px; background: #6B6B6B}
+#about_text {
+	padding: 8px 8px 8px 8px
+}
 #home_gallery { width: 476px; height: 314px }
 .home_box1 { width: 152px; height: 152px }
 .home_box2 { width: 314px; height: 152px }
@@ -112,7 +115,32 @@ img { margin: 0; padding: 0; border: none }
 .color3 { background: #00afce }
 .color4 { background: #a4c700 }
 #home_gallery a { display: block; float: left; width: 152px; height: 152px; margin: 0 10px 10px 0 }
+#home_gallery a.large { width: 314px; height: 314px; }
 #home_gallery a.no_mr { margin-right: 0 }
+
+.overlay_text{
+   color: white; 
+   position: absolute; 
+   top: 20px; 
+   left: 10px; 
+   width: 100%;
+}
+
+.overlay{
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+}
+
+.icon{
+	position: relative; 
+	width: 100%
+}
+
+#square_icon {
+	text-align: center;
+	padding: 50px 0 0 0
+}
 
 #social_links {
 	text-align: center;
