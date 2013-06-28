@@ -3,9 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Jason Wang</title>
-<meta name="keywords" content="metro, free website template, beautiful grid, image grid menu, colorful theme" />
-<meta name="description" content="Metro is a free website template by templatemo.com and it features jQuery horizontal scrolling among pages." />
-
+<!-- Home, About Me, Research, Teaching, Coding, -->
 	<link href="templatemo_style.css" type="text/css" rel="stylesheet" /> 
 	<script type="text/javascript" src="js/jquery.min.js"></script> 
 	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script> 
@@ -24,21 +22,20 @@
     <div id="content"> 
 		<div id="home" class="section">
         	
-			<div id="home_about" class="box">
-				<div id="about_text">
-					<h2>Welcome</h2>
-					<p>This is a test website. I hope to have more content in the future</p>
-					<p>What pictures should I use hmm...</p>
-				</div>
+			<div id="home_block" class="box">
+				<div class="icon"><a href="#about" class="large"><img src="images/me_SOFIA_thumb.jpg" alt="About Me" />
+					<h2 class="overlay_text"><span class="overlay">About Me</span></h2>
+				</a></div>
             </div>
             
-            <div id="home_gallery" class="box no_mr">
-                <div class="icon"><a href="images/gallery/01-l.jpg" rel="lightbox[gallery]" class="large"><img src="images/gallery/01.jpg" alt="image 1" />
-					<h2 class="overlay_text"><span class="overlay">My Research</span></h2>
-				</a></div>
-                <a href="images/gallery/03-l.jpg" rel="lightbox[gallery]" class="no_mr"><img src="images/gallery/03.jpg" alt="image 3" /></a>
-                <a href="images/gallery/06-l.jpg" rel="lightbox[gallery]" class="no_mr"><img src="images/gallery/06.jpg" alt="image 6" /></a>
-            </div>
+		
+			<div id="home_block" class="box"><a href="#research" class="large">
+				<img src="images/Jupiter_thumb.png" alt="image 1" />
+				<h2 class="overlay_text"><span class="overlay">My Research</span></h2>
+			</a></div>
+			<div id="home_bit" class="no_margin"><a href="images/gallery/03-l.jpg" rel="lightbox[gallery]" class="no_mr"><img src="images/gallery/03.jpg" alt="image 3" /></a></div>
+			<div id="home_bit" class="no_margin"><a href="images/gallery/06-l.jpg" rel="lightbox[gallery]" class="no_mr"><img src="images/gallery/06.jpg" alt="image 6" /></a></div>
+            
             <a href="#services">
             <div class="box home_box1 color1">
 				<div id="square_icon">
@@ -70,7 +67,7 @@
                
         </div> <!-- END of home -->
         
-        <div class="section section_with_padding" id="services"> 
+        <div class="section section_with_padding" id="research"> 
             <h2>Services</h2>
             <div class="img_border img_fl">
                 <img src="images/templatemo_image_03.jpg" alt="image" />	
@@ -94,11 +91,11 @@
             	<p><em>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam mauris ipsum, pulvinar sit amet varius at, placerat ut felis.</em></p>
             	<p>Donec vitae tortor non ipsum tristique condimentum ac ac nulla. Etiam sagittis iaculis dolor ut euismod. Nam faucibus, risus at consequat malesuada, urna turpis sagittis libero, sodales hendrerit dui arcu et nisi. Praesent pulvinar, dolor id lacinia pulvinar, mi ligula tempor libero, et semper sem dolor et elit. </p>
             </div>
-
-            <a href="#home" class="slider_nav_btn home_btn">home</a> 
-            <a href="#home" class="slider_nav_btn previous_btn">Previous</a>
-            <a href="#testimonial" class="slider_nav_btn next_btn">Next</a> 
-
+			<div id="templatemo_footer">
+				<a href="#home" class="slider_nav_btn home_btn">home</a> 
+				<a href="#home" class="slider_nav_btn previous_btn">Previous</a>
+				<a href="#testimonial" class="slider_nav_btn next_btn">Next</a> 
+			</div>
         </div> 
         <div class="section section_with_padding" id="testimonial"> 
             <h2>Testimonial</h2>
@@ -133,10 +130,11 @@
                 <p>Fusce nec felis id lacus sollicitudin vulputate. Proin tincidunt, arcu id pellentesque accumsan, neque dolor imperdiet ligula. </p>
                 <cite>Katey - <span>KoFlash.com</span></cite> 
 			</div>
-                    
-            <a href="#home" class="slider_nav_btn home_btn">home</a> 
-            <a href="#services" class="slider_nav_btn previous_btn">Previous</a>
-            <a href="#contact" class="slider_nav_btn next_btn">Next</a> 
+            <div id="templatemo_footer">       
+				<a href="#home" class="slider_nav_btn home_btn">home</a> 
+				<a href="#services" class="slider_nav_btn previous_btn">Previous</a>
+				<a href="#contact" class="slider_nav_btn next_btn">Next</a> 
+			</div>
         </div> 
         <div class="section section_with_padding" id="contact"> 
             <h2>Contact</h2> 
@@ -170,16 +168,18 @@
                 
                 <iframe width="320" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Central+Park,+New+York,+NY,+USA&amp;aq=0&amp;sll=14.093957,1.318359&amp;sspn=69.699334,135.263672&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Central+Park,+New+York,+NY,+USA&amp;ll=40.778265,-73.96988&amp;spn=0.033797,0.06403&amp;t=m&amp;output=embed"></iframe>
                 
-            </div>
-			<a href="#home" class="slider_nav_btn home_btn">home</a> 
-            <a href="#testimonial" class="slider_nav_btn previous_btn">Previous</a>
-             
-        </div> 
-    </div> 
-</div>
+
+				</div> 
+			</div>
+			<div id="templatemo_footer">
+				<a href="#home" class="slider_nav_btn home_btn">home</a> 
+				<a href="#testimonial" class="slider_nav_btn previous_btn">Previous</a>
+			</div> 
+		</div> 
+	</div>
 </div>
 <div id="templatemo_footer">
-    Copyright © 2072 <a href="#">Your Company Name</a> | Designed by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
+    Copyright © 2013 Jason Wang | Built upon template from <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
 </div>
 
 </body> 

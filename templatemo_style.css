@@ -4,8 +4,8 @@ body{
 	color: #ddd;
 	font-size: 12px;
 	line-height: 1.6em; 
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background-color: #000;
+	font-family: segoe ui, verdana, arial, sans-serif;
+	background-color: #242424;
 }
 
 a, a:link, a:visited { color: #9CF; font-weight: normal; text-decoration: none }
@@ -18,8 +18,8 @@ ul, li {
 }
 
 h1, h2, h3, h4, h5, h6 { color: #fff; font-weight: normal; }
-h1 { font-size: 58px; margin: 0 0 30px; padding: 5px 0 }
-h2 { font-size: 34px; margin: 0 0 30px; padding: 5px 0 }
+h1 { font-size: 58px; margin: 0 0 30px; padding: 0px 0 }
+h2 { font-size: 34px; margin: 0 0 30px; padding: 0px 0 }
 h3 { font-size: 20px; margin: 0 0 20px; padding: 0; }
 h4 { font-size: 16px; margin: 0 0 15px; padding: 0; }
 h5 { font-size: 14px; margin: 0 0 10px; padding: 0;  }
@@ -76,11 +76,13 @@ img { margin: 0; padding: 0; border: none }
 	width: 800px;
 	margin: 0 auto;
 	padding: 20px 0;
-	text-align: right
+	text-align: center;
+	display: block;
+	margin-left: auto; margin-right: auto;
 }
 
 #site_title { display: block }
-#site_title a { color: #fff; font-weight: 700; letter-spacing: 10px; line-height: 30px }
+#site_title a { color: #fff; line-height: 50px }
 
 #content{
 	overflow:hidden;
@@ -97,13 +99,15 @@ img { margin: 0; padding: 0; border: none }
 	margin-right: 20px;
 }
 
-.section a.slider_nav_btn { position: absolute; top: 0; width: 50px; height: 46px; display: block; background-image: url(images/slider_nav_btn.jpg);  text-indent: -10000px }
-.section a.home_btn { right: 50px; background-position: 102px 0 }
-.section a.previous_btn { right: 100px; background-position: 0 0 }
-.section a.next_btn { right: 0px; background-position: 50px 0 }
+#templatemo_footer a.slider_nav_btn { position: absolute; bottom: 0; width: 50px; height: 46px; display: block; background-image: url(images/slider_nav_btn.jpg);  text-indent: -10000px; margin-left: auto; margin-right: auto  }
+#templatemo_footer a.home_btn { right: 50px; background-position: 102px 0 }
+#templatemo_footer a.previous_btn { right: 100px; background-position: 0 0 }
+#templatemo_footer a.next_btn { right: 0px; background-position: 50px 0 }
 
 .box { float: left; margin: 0 10px 10px 0 }
-#home_about { width: 314px; height: 314px; background: #6B6B6B}
+#home_block { position: relative; width: 314px; height: 314px; background: #6B6B6B}
+#home_bit { display: block; float: left; width: 152px; height: 152px; margin: 0 10px 10px 0}
+#home_bit.no_margin{ margin-right: 0}
 #about_text {
 	padding: 8px 8px 8px 8px
 }
@@ -121,21 +125,17 @@ img { margin: 0; padding: 0; border: none }
 .overlay_text{
    color: white; 
    position: absolute; 
-   top: 20px; 
+   bottom: -20px; 
    left: 10px; 
    width: 100%;
 }
 
 .overlay{
    background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
+   background: rgba(0, 0, 0, 0.0);
    padding: 5px; 
 }
 
-.icon{
-	position: relative; 
-	width: 100%
-}
 
 #square_icon {
 	text-align: center;
