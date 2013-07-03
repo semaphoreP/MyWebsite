@@ -45,19 +45,20 @@ cite span { font-weight: 400; color: #ccc; }
 .no_bullet li { margin: 0 0 20px 0; padding: 0 }
 a.header { display: block; font-weight: 700 }
 
-.half { width: 370px }
+.half { width: 384px }
 
 .h20 { height: 20px }
 .h40 { height: 40px }
 
 img { margin: 0; padding: 0; border: none }
-.img_border { background: #fff; padding: 4px; border: 1px solid #ccc }
+.img_border { background: #fff; padding: 4px; margin: 0 0 0 8px;	 }
 .img_nom { display: inline-block; margin-bottom: 15px }
-.img_fl { float: left; margin: 3px 15px 5px 0 }
+.img_fl { float: left; margin: 0px 5px 5px 5px }
 .img_fr { float: right; margin: 3px 0 5px 15px }
+.img_overlay{ position: relative;}
 
 .left { float: left }
-.right { float: right }
+.right { float: right; }
 
 #templatemo_header {
 	width: 800px;
@@ -74,11 +75,10 @@ img { margin: 0; padding: 0; border: none }
 
 #templatemo_footer {
 	width: 800px;
-	margin: 0 auto;
+	margin: auto auto;
 	padding: 20px 0;
 	text-align: center;
 	display: block;
-	margin-left: auto; margin-right: auto;
 }
 
 #site_title { display: block }
@@ -99,18 +99,35 @@ img { margin: 0; padding: 0; border: none }
 	margin-right: 20px;
 }
 
-#templatemo_footer a.slider_nav_btn { position: absolute; bottom: 0; width: 50px; height: 46px; display: block; background-image: url(images/slider_nav_btn.jpg);  text-indent: -10000px; margin-left: auto; margin-right: auto  }
-#templatemo_footer a.home_btn { right: 50px; background-position: 102px 0 }
-#templatemo_footer a.previous_btn { right: 100px; background-position: 0 0 }
-#templatemo_footer a.next_btn { right: 0px; background-position: 50px 0 }
+.section .textbody{
+	height: 440px;
+	background: url(images/zcei_soccer.jpg);
+}
+
+.nav {
+	width: 800px;
+	height: 47px;
+	margin: auto auto;
+	text-align: center;
+	display: block;
+	text-align: center;
+}
+.nav a.navbar { bottom: 0; width: 44px; height: 46px; background-image: url(images/navbar2.png); text-indent: -10000px; display: inline-block;}
+.nav  ul {position: relative; left: 290px; margin: 0 0 0 0; padding: 0; list-style-type: none; width: 220px; height: 46px;}
+.nav  li {float: left;  height: 46px; display: block;}
+.nav a.home_but { background-position-x: 132px;}
+.nav a.abou_but { background-position-x: 220px;}
+.nav a.rese_but { background-position-x: 176px;}
+.nav a.teac_but { background-position-x: 88px;}
+.nav a.code_but { background-position-x: 44px;}
+.nav a.green{ background-position-y: 46px; }
+.nav a.white{ background-position-y: 0px; }
 
 .box { float: left; margin: 0 10px 10px 0 }
-#home_block { position: relative; width: 314px; height: 314px; background: #6B6B6B}
-#home_bit { display: block; float: left; width: 152px; height: 152px; margin: 0 10px 10px 0}
-#home_bit.no_margin{ margin-right: 0}
-#about_text {
-	padding: 8px 8px 8px 8px
-}
+.home_block { position: relative; width: 314px; height: 314px; background: #6B6B6B}
+.home_bit { display: block; float: left; width: 152px; height: 152px; margin: 0 10px 10px 0}
+.home_bit.no_margin{ margin-right: 0}
+
 #home_gallery { width: 476px; height: 314px }
 .home_box1 { width: 152px; height: 152px }
 .home_box2 { width: 314px; height: 152px }
@@ -130,12 +147,46 @@ img { margin: 0; padding: 0; border: none }
    width: 100%;
 }
 
+.overlay_text_right{
+	color: white; 
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	text-align: right;
+	padding: 5px; 
+}
+
+.overlay p{
+	color: white;
+	font-size: 12px;
+}
+.overlay a:link, .overlay a:visited{ color:#ddd; }
+.overlay a:hover{ color: #FF6; }
+
 .overlay{
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.0);
    padding: 5px; 
 }
 
+.overlay_blue{
+   background: rgb(61, 221, 245); /* fallback color */
+   background: rgba(61, 221, 245, 0.8);
+}
+
+.section_title{
+	width: 120px;
+	height: 50px;
+	margin: 0px 0px 8px 5px;
+	text-align: center;
+	position: relative;
+	top: 4px;
+}
+
+.section_title_text{
+	position: relative;
+	top: 12px;
+}
 
 #square_icon {
 	text-align: center;
