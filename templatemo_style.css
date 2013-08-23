@@ -11,11 +11,12 @@ body{
 a, a:link, a:visited { color: #9CF; font-weight: normal; text-decoration: none }
 a:hover { color: #FF6; text-decoration: none; }
 
-ul, li {
-	padding:0;
+ul{
 	margin:0;
-	list-style:none;
+	padding:0px 0px 0px 20px;
 }
+
+ul .squarebullet {list-style-type: square;}
 
 h1, h2, h3, h4, h5, h6 { color: #fff; font-weight: normal; }
 h1 { font-size: 58px; margin: 0 0 30px; padding: 0px 0 }
@@ -45,7 +46,7 @@ cite span { font-weight: 400; color: #ccc; }
 .no_bullet li { margin: 0 0 20px 0; padding: 0 }
 a.header { display: block; font-weight: 700 }
 
-.half { width: 384px }
+.half { width: 380px }
 
 .h20 { height: 20px }
 .h40 { height: 40px }
@@ -68,7 +69,7 @@ img { margin: 0; padding: 0; border: none }
 
 #templatemo_main {
 	width: 800px;
-	height: 487px;
+	
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -88,21 +89,24 @@ img { margin: 0; padding: 0; border: none }
 	overflow:hidden;
 	width: 7000px;
 	position:relative;
-	height: 487px;
+	
 }
 
 .section {
 	position:relative;
 	float:left;
 	width: 800px;
-	height: 487px;
+	
 	margin-right: 20px;
 }
 
 .section .textbody{
 	height: 440px;
-	background: url(images/zcei_soccer.jpg);
 }
+
+.section .zceiback{ background: url(images/zcei_soccer.jpg); }
+.section .sofiawing{ background: url(images/SOFIA_wing.jpg); }
+.section .hackathon{ background: url(images/hackathon.jpg); }
 
 .nav {
 	width: 800px;
@@ -113,20 +117,21 @@ img { margin: 0; padding: 0; border: none }
 	text-align: center;
 }
 .nav a.navbar { bottom: 0; width: 44px; height: 46px; background-image: url(images/navbar2.png); text-indent: -10000px; display: inline-block;}
-.nav  ul {position: relative; left: 290px; margin: 0 0 0 0; padding: 0; list-style-type: none; width: 220px; height: 46px;}
+.nav  ul {padding:0; margin:0; list-style:none; position: relative; left: 290px; margin: 0 0 0 0; padding: 0; list-style-type: none; width: 220px; height: 46px;}
 .nav  li {float: left;  height: 46px; display: block;}
 .nav a.home_but { background-position-x: 132px;}
 .nav a.abou_but { background-position-x: 220px;}
 .nav a.rese_but { background-position-x: 176px;}
 .nav a.teac_but { background-position-x: 88px;}
 .nav a.code_but { background-position-x: 44px;}
-.nav a.green{ background-position-y: 46px; }
+.nav a.green{ background-position-y: 46px; }f
 .nav a.white{ background-position-y: 0px; }
 
 .box { float: left; margin: 0 10px 10px 0 }
 .home_block { position: relative; width: 314px; height: 314px; background: #6B6B6B}
-.home_bit { display: block; float: left; width: 152px; height: 152px; margin: 0 10px 10px 0}
+.home_bit { position: relative; width: 152px; height: 152px; margin: 0 10px 10px 0}
 .home_bit.no_margin{ margin-right: 0}
+.home_bit h3{ margin: 0 -5px 30px;}
 
 #home_gallery { width: 476px; height: 314px }
 .home_box1 { width: 152px; height: 152px }
@@ -158,34 +163,53 @@ img { margin: 0; padding: 0; border: none }
 
 .overlay p{
 	color: white;
-	font-size: 12px;
+	font-size: 13px;
 }
-.overlay a:link, .overlay a:visited{ color:#ddd; }
-.overlay a:hover{ color: #FF6; }
+
+
+.overlay_border{
+	margin: 5px 5px 5px 5px;
+}
 
 .overlay{
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.0);
-   padding: 5px; 
+	padding: 5px 5px 5px 5px;
 }
 
 .overlay_blue{
-   background: rgb(61, 221, 245); /* fallback color */
-   background: rgba(61, 221, 245, 0.8);
+	background: rgb(18, 152, 224); /* fallback color */
+	background: rgba(18, 152, 224, 0.87);
+}
+.overlay_orange{
+	background: rgb(255, 143, 15); /* fallback color */
+	background: rgba(255, 143, 15, 0.87);
+}
+.overlay_green{
+	background: rgb(70, 212, 44); /* fallback color */
+	background: rgba(70, 212, 44, 0.87);
+}
+.overlay_purple{
+	background: rgb(227, 45, 221); /* fallback color */
+	background: rgba(227, 45, 221, 0.87);
+}
+
+.overlay_gray{
+	background: rgb(64, 64, 64); /* fallback color */
+	background: rgba(32, 32, 32, 0.87);
 }
 
 .section_title{
-	width: 120px;
-	height: 50px;
-	margin: 0px 0px 8px 5px;
-	text-align: center;
-	position: relative;
-	top: 4px;
+	width: 800px;
+	height: 54px;
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+	position: relative;	
 }
 
 .section_title_text{
 	position: relative;
-	top: 12px;
+	top: 14px;
+	left: 5px;
+	padding: 0px 8px 0px 8px;
 }
 
 #square_icon {
@@ -247,3 +271,4 @@ img { margin: 0; padding: 0; border: none }
 #contact_form form .submit_btn { font-size: 12px; background: #333; color: #CCC; cursor:pointer; border: 1px solid #666; padding: 5px 10px; }
 
 .no_mr { margin-right: 0 }
+.no_mb { margin-bottom: 0 }

@@ -5,10 +5,10 @@
 <title>Jason Wang</title>
 <!-- Home, About Me, Research, Publications, Teaching, Coding, Service, Art -->
 	<link href="templatemo_style.css" type="text/css" rel="stylesheet" /> 
-	<script type="text/javascript" src="js/jquery.min.js"></script> 
+	<!--<script type="text/javascript" src="js/jquery.min.js"></script> 
 	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script> 
 	<script type="text/javascript" src="js/jquery.localscroll-min.js"></script> 
-	<script type="text/javascript" src="js/init.js"></script> 
+	<script type="text/javascript" src="js/init.js"></script> -->
     
     <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
     <script type="text/JavaScript" src="js/slimbox2.js"></script> 
@@ -23,66 +23,60 @@
 		<div id="home" class="section">
         	
 			<div class=" home_block box">
-				<div class="icon"><a href="#about" class="large"><img src="images/me_SOFIA_thumb.jpg" alt="About Me" />
+				<a href="#about">
+					<img src="images/me_SOFIA_thumb.jpg" alt="About Me" />
 					<h2 class="overlay_text"><span class="overlay">About Me</span></h2>
-				</a></div>
+				</a>
             </div>
             
-		
-			<div class="home_block box"><a href="#research" class="large">
-				<img src="images/Jupiter_thumb.png" alt="image 1" />
-				<h2 class="overlay_text"><span class="overlay">Research</span></h2>
-			</a></div>
-			<div class="home_bit no_margin"><a href="images/gallery/03-l.jpg" rel="lightbox[gallery]" class="no_mr"><img src="images/gallery/03.jpg" alt="image 3" /></a></div>
-			<div class="home_bit no_margin"><a href="images/gallery/06-l.jpg" rel="lightbox[gallery]" class="no_mr"><img src="images/gallery/06.jpg" alt="image 6" /></a></div>
+			<div class="home_block box">
+				<a href="#research">
+					<img src="images/research_thumb.png" />
+					<h2 class="overlay_text"><span class="overlay">Research</span></h2>
+				</a>
+			</div>
+			<div class="box home_bit no_margin">
+				<a href="#teaching">
+					<img src="images/teaching_thumb.png" />
+					<h3 class="overlay_text"><span class="overlay">Teaching</span></h3>
+				</a>
+			</div>
             
-            <a href="#services">
-            <div class="box home_box1 color1">
-				<div id="square_icon">
-					<div class="clear h20"></div>
-						<h3>Services</h3>
-					
-				</div>
-            </div>
-            </a>
-            <div class="box home_box1 color2">
-	            <a href="#testimonial"><img src="images/testimonial.jpg" alt="Testimonial" /></a>
-            </div>
-            
-            <div class="box home_box2 color3">
-            	<div id="social_links">
-                    <a href="https://www.facebook.com/templatemo"><img src="images/facebook.png" alt="Facebook" /></a>
-                    <a href="#"><img src="images/flickr.png" alt="Flickr" /></a>
-                    <a href="https://www.facebook.com/templatemo"><img src="images/twitter.png" alt="Twitter" /></a>
-                    <a href="#"><img src="images/youtube.png" alt="Youtube" /></a>
-                    <a href="https://www.facebook.com/templatemo"><img src="images/vimeo.png" alt="Vimeo" /></a>
-              <div class="clear h20"></div>
-                    <h3>Social</h3>
-              </div>	
-            </div>
-            
-            <div class="box home_box1 color4 no_mr">
-            	<a href="#contact"><img src="images/contact.jpg" alt="Contact" /></a>
-            </div>
+			<div class="box home_bit no_margin">
+				<a href="#code">
+					<img src="images/code_thumb.png" />
+					<h3 class="overlay_text"><span class="overlay">Code</span></h3>
+				</a>
+			</div>
+			<!--
+			<div class="box home_bit no_margin">
+            	<a href="#about">
+					<img src="images/contact_thumb.png"/>
+					<h3 class="overlay_text"><span class="overlay">Contact</span></h3>
+				</a>
+            </div>-->      
                
         </div> <!-- END of home -->
 		
         <div class="section section_with_padding" id="about"> 
-			<div class="textbody">
-				<h2 class="section_title overlay_blue"><span class="section_title_text">About</span></h2>
+			<div class="textbody zceiback">
+				<h2 class="section_title no_mb">
+					<span class="overlay overlay_blue section_title_text">About</span>
+				</h2>
 				<div class="img_border img_fl overlay_blue img_overlay">
 					<img src="images/me_SOFIA_370.jpg" alt="image" />
-					<div class="overlay_text_right overlay_blue">
-						jason.wang [at] outlook.com
-						<br/> (614) 596-2811
-					</div>
 				</div>
-				<div class="half right overlay overlay_blue">
+				<div class="overlay_border"><div class="half right overlay overlay_gray">
 					<p>I am a first-year astronomy graduate student at UC Berkeley. I grew up in Dublin, Ohio and got my B.A. in Physics with a Minor in Computer Science from Cornell University. </p>
-					<p>For fun, I enjoying slacklining, playing pick-up sports, exploring my surroundings, doodling, and playing my keyboard. I strive to be a jack-of-all trades: currently, I'm working on my juggling skills and want to pick up unicycling</p>
-					<p>Things that I like to brag about include flying on <a href="http://www.nasa.gov/mission_pages/SOFIA/index.html">SOFIA</a>, writing my own operating system, and getting chased by an angry elephant. If you want to hear about them, contact me!</p>
-				</div>
-				
+					<p>For fun, I enjoying slacklining, playing pick-up sports, exploring my surroundings, doodling, and playing the piano. I strive to be a jack-of-all trades: currently, I'm working on my juggling, among other circus skills.</p>
+					<p class="no_mb">Things that I like to brag about include flying on <a href="http://www.nasa.gov/mission_pages/SOFIA/index.html">SOFIA</a>, writing my own operating system, and getting chased by an angry elephant. If you want to hear about them, contact me!</p>
+				</div></div>
+				<div class="half right h20"></div>
+				<div class="overlay_border"><div class="half right overlay overlay_gray">
+					<h3>Contact</h3>
+					<h5 class="no_mb">jason[dot]wang [at] outlook[dot]com
+					<br/> [614] 596 2811</h4>
+				</div></div>
 				
 			</div>
 			<div class="nav">	
@@ -97,30 +91,24 @@
         </div> 
         
         <div class="section section_with_padding" id="research"> 
-			<div class="textbody">
-				<h2>Services</h2>
-				<div class="img_border img_fl">
-					<img src="images/templatemo_image_03.jpg" alt="image" />	
+			<div class="textbody sofiawing">
+				<h2 class="section_title no_mb">
+					<span class="overlay_orange section_title_text">Research</span>
+				</h2>
+				<div class="img_border img_fl overlay_gray">
+					<img src="images/Jupiter_11C31R.png" alt="Jupiter Callisto and Io" title="FORCAST Image of Jupiter with Io (left) and Callisto (right)" />	
 				</div>
-				<div class="half right">
-					<ul class="list_bullet">
-						<li>Maecenas ac odio ipsum donec cursus</li>
-						<li>Fusce risus tortor, interdum</li>
-						<li>Proin facilisis ullamcorper</li>
-						<li>Sed vel justo quis ligula</li>
-						<li>Ut tristique sagittis arcu</li>
-						<li>Maecenas ac odio ipsum donec cursus</li>
-						<li>Fusce risus tortor, interdum</li>
-					 </ul>
-				</div>
-				<div class="clear h40"></div>
-				<div class="img_border img_fr">
-					<img src="images/templatemo_image_04.jpg" alt="image" />	
-				</div>
-				<div class="half left">                
-					<p><em>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam mauris ipsum, pulvinar sit amet varius at, placerat ut felis.</em></p>
-					<p>Donec vitae tortor non ipsum tristique condimentum ac ac nulla. Etiam sagittis iaculis dolor ut euismod. Nam faucibus, risus at consequat malesuada, urna turpis sagittis libero, sodales hendrerit dui arcu et nisi. Praesent pulvinar, dolor id lacinia pulvinar, mi ligula tempor libero, et semper sem dolor et elit. </p>
-				</div>
+				<div class="overlay_border"><div class="half right overlay overlay_gray">
+					<h3>Research Experience</h3>
+					<p>At Cornell, I worked with Professor Terry Herter on <a href="http://tnt.tn.cornell.edu/">FORCAST</a>, a mid-infrared camera for <a href="http://www.nasa.gov/mission_pages/SOFIA/index.html">SOFIA</a>. I am thrilled to have the unique opportunity to fly on SOFIA three times and am forever immortalized by having my elbow poking into the left edge of this <a href="http://www.nasa.gov/images/content/618365main_SOFIA_AAA_full_full.jpg">NASA picutre</a> and by a cameo in the SOFIA safety video.</p>
+					<p>Science wise, my work on FORCAST has invovled working on calibrating FORCAST, improving the reduction pipeline (if you ever want to talk about median filtering, I'm your man), and studying the atmosphere of Jupiter.</p>
+					<p class="no_mb">My research on Jupiter also involved Professor Peter Gierasch. We used FORCAST images of Jupiter to look at <a href="http://en.wikipedia.org/wiki/Spin_isomers_of_hydrogen">ortho-para hydorgen</a> ratios and how they vary across Jupiter. The ortho-para ratio is a good tracer for convection on Jupiter and we show that FORCAST is capable of performing this measurement.</p>
+				</div></div>
+				<div class="clear h20"></div>
+				<div class="overlay_border"><div class="half left overlay overlay_gray">                
+					<h3>Current Research</h3>
+					<p class="no_mb">Having just started at Berkeley, I have not yet started research yet. By tautology, I am intersted in anything interesting, but in particular I am looking for research regarding planets (whether inside our Solar System or out) and instrumentation. Additionally, I enjoy programming and am always looking to integrate it with my interest in astronomy.</p>
+				</div></div>
 			</div>
 			<div class="nav">	
 				<ul>
@@ -133,37 +121,16 @@
 			</div>
         </div> 
         <div class="section section_with_padding" id="teaching"> 
-            <h2>Teaching</h2>
-            <p><em>Aliquam venenatis, quam a semper blandit, lectus mi convallis orci, ut dictum ante leo non leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat, urna in gravida rhoncus, mi elit luctus nibh, a luctus erat elit vel quam. </em></p>
-            <div class="clear h40"></div>
-            <div class="half left">
-            	<div class="img_border img_fl">
-                	<img src="images/templatemo_image_01.jpg" alt="image 1" />
-                </div>
-                <p>Fusce nec felis id lacus sollicitudin vulputate. Proin tincidunt, arcu id pellentesque accumsan, neque dolor imperdiet ligula. </p>
-                <cite>Walker - <span>TemplateMo.com</span></cite>
-			</div>
-            <div class="half right">
-                <div class="img_border img_fl">
-                	<img src="images/templatemo_image_01.jpg" alt="image 2" />
-                </div>
-                <p>Fusce nec felis id lacus sollicitudin vulputate. Proin tincidunt, arcu id pellentesque accumsan, neque dolor imperdiet ligula. </p>
-                <cite>Jason - <span>TemplateMo.com</span></cite>
-			</div>
-            <div class="clear h40"></div>
-            <div class="half left">
-            	<div class="img_border img_fl">
-                	<img src="images/templatemo_image_01.jpg" alt="image 3" />
-                </div>
-                <p>Fusce nec felis id lacus sollicitudin vulputate. Proin tincidunt, arcu id pellentesque accumsan, neque dolor imperdiet ligula. </p>
-                <cite>Danny - <span>FlashMo.com</span></cite>
-			</div>
-            <div class="half right">
-                <div class="img_border img_fl">
-                	<img src="images/templatemo_image_01.jpg" alt="image 4" />
-                </div>
-                <p>Fusce nec felis id lacus sollicitudin vulputate. Proin tincidunt, arcu id pellentesque accumsan, neque dolor imperdiet ligula. </p>
-                <cite>Katey - <span>KoFlash.com</span></cite> 
+            <div class="textbody">
+				<h2 class="section_title no_mb">
+					<span class="overlay_green section_title_text">Teaching</span>
+				</h2>
+				<div class="img_border img_fl overlay_green">
+					<img src="images/PapaGun.png" alt="Papa Gün's" title="Only the best for your cache" />	
+				</div>
+				<div class="overlay_border"><div class="half right overlay overlay_gray">
+					<p class="no_mb">At Cornell, I was a TA for <a href="http://www.cs.cornell.edu/courses/cs4410/2012fa/">CS4410</a> and <a href"http://www.cs.cornell.edu/courses/cs4410/2012fa/CS4411/index.html">CS4411</a> in the Fall semester of 2012. My responsibilities included holding office hours, answering the constant flood of emails, grading exams and projects, and fixing configuration issues with Visual Studio.</p>
+				</div></div>
 			</div>
 			<div class="nav">	
 				<ul>
@@ -176,39 +143,26 @@
 			</div>
         </div> 
         <div class="section section_with_padding" id="code"> 
-            <h2>Code</h2> 
-            <div class="half left">
-                <h4>Quick Contact Form</h4>
-                <p>Nullam a tortor est, congue fermentum nisi. Maecenas nulla nulla, eu volutpat euismod, scelerisque ut dui.</p>
-                <div id="contact_form">
-                    <form method="post" name="contact" action="#contact">
-                        <div class="left">
-                            <label for="author">Name:</label> <input name="author" type="text" class="input_field" id="author" maxlength="40" />
-                        </div>
-                        <div class="right">                           
-                            <label for="email">Email:</label> <input name="email" type="text" class="input_field" id="email" maxlength="40" />
-                        </div>
-                        <div class="clear"></div>
-                        <label for="text">Message:</label> <textarea id="text" name="text" rows="0" cols="0"></textarea>
-                        <input type="submit" class="submit_btn float_l" name="submit" id="submit" value="Send" />
-                    </form>
-                </div>
-            </div>
-            
-            <div class="half right">
-                <h4>Mailing Address</h4>
-                460-820 Duis lacinia dictum, <br />
-                Vestibulum auctor, 12650<br />
-                Nam rhoncus, diam a mollis<br />
-          		<strong>Email: info[ at ]companyname[ dot ]com</strong><br />
-                
-                <div class="clear h20"></div>
-                <div class="img_nom img_border"><span></span>
-                
-                <iframe width="320" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Central+Park,+New+York,+NY,+USA&amp;aq=0&amp;sll=14.093957,1.318359&amp;sspn=69.699334,135.263672&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Central+Park,+New+York,+NY,+USA&amp;ll=40.778265,-73.96988&amp;spn=0.033797,0.06403&amp;t=m&amp;output=embed"></iframe>
-                
-
-				</div> 
+			<div class="textbody hackathon">
+				<h2 class="section_title no_mb">
+					<span class="overlay_purple section_title_text">Code</span>
+				</h2>      
+				<div class="overlay_border"><div class="half left overlay overlay_gray">
+					<h3>Microsoft Visual Studio</h3>		
+					<p>I interned at Microsoft the summer of 2012 . I worked in the DevDiv (Developer Division) Engineering Systems group which is responsible for developing the automated testing harness used all across DevDiv. I worked with GUI automation, modular testing, and adapting existing tools for the cloud. I also participated in the launch of Visual Studio 2012.</p>
+					<h4>Hack-A-Thon</h4>
+					<p class="no_mb">I participated in the DevDiv Intern Hack-A-Thon and my group's project was voted best by the full time employees. Our group integrated Kinect with Windows 8 so users can perform touch screen gestures without a touch screen. You can check out a video of our project <a href="http://channel9.msdn.com/posts/Microsoft-Intern-Hack-A-Thon">here</a>.</p>
+				</div></div>
+				<div class="overlay_border"><div class="half right overlay overlay_gray">
+					<h3>Past Projects (mostly academic)</h3>
+					<ul class="squarebullet">
+					<li><b>P2Potato</b> - A distributed Dropbox built upon <a href="http://isis2.codeplex.com/">Isis<sup>2</sup></a> with no centralized data store.</li>
+					<li><b>PortOS</b> - Wrote my own operating system (concurrent scheduling, TCP/IP, UDP, Routing, UNIX FS)</a></li>
+					<li><b>Fast Median Filtering</b> - A bucket-sort implementation of Median Filtering that scales well and can handle floating point numbers. Written in Pascal for Terry Herter</li>
+					<li><b>PONG</b> in MIPS assembly language</li>
+					</ul>
+					
+				</div></div>
 			</div>
 			<div class="nav">	
 				<ul>
