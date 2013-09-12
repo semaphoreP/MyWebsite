@@ -1,7 +1,7 @@
 body{ 
 	margin: 0;
 	padding: 0;
-	color: #ddd;
+	color: #B3B3B3;
 	font-size: 12px;
 	line-height: 1.6em; 
 	font-family: segoe ui, verdana, arial, sans-serif;
@@ -26,7 +26,8 @@ h4 { font-size: 16px; margin: 0 0 15px; padding: 0; }
 h5 { font-size: 14px; margin: 0 0 10px; padding: 0;  }
 h6 { font-size: 12px; margin: 0 0 5px; padding: 0; font-weight: 700 }
 
-p { padding: 0; margin: 0 0 15px 0 }
+p { padding: 0; margin: 0 0 15px 0;}
+b { color: white }
 
 .clear{
 	clear:left;
@@ -107,6 +108,7 @@ img { margin: 0; padding: 0; border: none }
 .section .zceiback{ background: url(images/zcei_soccer.jpg); }
 .section .sofiawing{ background: url(images/SOFIA_wing.jpg); }
 .section .hackathon{ background: url(images/hackathon.jpg); }
+.section .classroom{ background: url(images/classroom_zambia.jpg); }
 
 .nav {
 	width: 800px;
@@ -162,7 +164,7 @@ img { margin: 0; padding: 0; border: none }
 }
 
 .overlay p{
-	color: white;
+	color: #B3B3B3;
 	font-size: 13px;
 }
 
