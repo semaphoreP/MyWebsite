@@ -4,7 +4,7 @@ body{
 	color: #B3B3B3;
 	font-size: 12px;
 	line-height: 1.6em; 
-	font-family: segoe ui, verdana, arial, sans-serif;
+	font-family: segoe ui, open sans, arial, sans-serif;
 	background-color: #242424;
 }
 
@@ -116,18 +116,20 @@ img { margin: 0; padding: 0; border: none }
 	margin: auto auto;
 	text-align: center;
 	display: block;
-	text-align: center;
 }
 .nav a.navbar { bottom: 0; width: 44px; height: 46px; background-image: url(images/navbar2.png); text-indent: -10000px; display: inline-block;}
-.nav  ul {padding:0; margin:0; list-style:none; position: relative; left: 290px; margin: 0 0 0 0; padding: 0; list-style-type: none; width: 220px; height: 46px;}
-.nav  li {float: left;  height: 46px; display: block;}
-.nav a.home_but { background-position-x: 132px;}
-.nav a.abou_but { background-position-x: 220px;}
-.nav a.rese_but { background-position-x: 176px;}
-.nav a.teac_but { background-position-x: 88px;}
-.nav a.code_but { background-position-x: 44px;}
-.nav a.green{ background-position-y: 46px; }f
-.nav a.white{ background-position-y: 0px; }
+.nav  ul {list-style:none; position: relative; left: 290px; margin: 0 0 0 0; padding: 0; list-style-type: none; width: 220px; height: 46px;}
+.nav  li {float: left;  height: 46px; display: block; }
+.nav a.home_but_wh { background-position: 132px 0px;}
+.nav a.abou_but_wh { background-position: 220px 0px;}
+.nav a.rese_but_wh { background-position: 176px 0px;}
+.nav a.teac_but_wh { background-position: 88px 0px;}
+.nav a.code_but_wh { background-position: 44px 0px;}
+.nav a.home_but_gr { background-position: 132px 46px;}
+.nav a.abou_but_gr { background-position: 220px 46px;}
+.nav a.rese_but_gr { background-position: 176px 46px;}
+.nav a.teac_but_gr { background-position: 88px 46px;}
+.nav a.code_but_gr { background-position: 44px 46px;}
 
 .box { float: left; margin: 0 10px 10px 0 }
 .home_block { position: relative; width: 314px; height: 314px; background: #6B6B6B}
