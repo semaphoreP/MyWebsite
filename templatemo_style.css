@@ -120,7 +120,7 @@ img { margin: 0; padding: 0; border: none }
 	text-align: center;
 	display: block;
 }
-.nav a.navbar { bottom: 0; width: 44px; height: 46px; background-image: url(images/navbar2.png); text-indent: -20000px; display: inline-block;}
+.nav a.navbar { bottom: 0; width: 44px; height: 46px; background-image: url(images/navbar3.png); text-indent: -20000px; display: inline-block;}
 .nav  ul {list-style:none; position: relative; left: 256px; margin: 0 0 0 0; padding: 0; list-style-type: none; width: 308px; height: 46px;}
 .nav  li {float: left;  height: 46px; display: block; }
 .nav a.home_but_wh { background-position: 132px 0px;}
