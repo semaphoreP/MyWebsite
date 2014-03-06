@@ -161,7 +161,7 @@ img { margin: 0; padding: 0; border: none }
 .overlay_text{
    color: white; 
    position: absolute; 
-   bottom: -20px; 
+   bottom: -18px; 
    left: 10px; 
    width: 100%;
 }
@@ -175,6 +175,11 @@ img { margin: 0; padding: 0; border: none }
 	padding: 5px; 
 }
 
+.overlay{
+	padding: 5px 5px 5px 5px;
+	#vertical-align: 2px;
+}
+
 .overlay p{
 	color: #B3B3B3;
 	font-size: 13px;
@@ -183,10 +188,6 @@ img { margin: 0; padding: 0; border: none }
 
 .overlay_border{
 	margin: 5px 5px 5px 5px;
-}
-
-.overlay{
-	padding: 5px 5px 5px 5px;
 }
 
 .overlay_blue{
