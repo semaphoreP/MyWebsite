@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage[margin=1.0in,letterpaper]{geometry}
+
+% "%" are used to denote commments, everything after it on this line is a comment and while not be processed 
+
+\begin{document}
+
+\title{A Brief Overview of \LaTeX{}}
+\author{The TAs}
+\date{September 17, 2013}
+\maketitle
+
+\begin{abstract}
+A tutorial of \LaTeX{} is presented. The format of a lab report in \LaTeX{} is discussed. Fronts and greek letters are shown to be within the capabilities of this software. Equations, figures, and tables are also created. 
+\end{abstract}
+
+
+\section{Introduction}
+This is where you write you lab report. You can do all kinds of fun things like {\bf Bold}, {\it italic}, \underline{underlined}, $a_{subscript}$, $a^{superscript}$, and an inline equation $f(x) = \sin(\omega t)$. I can also write equations separately in their own line.
+\begin{equation} \label{eq:formula}
+F = \int \int_0^\infty B_\nu d\nu d\Omega
+\end{equation}
+And write a multiple series of equations and align the '=' sign for each line.
+\begin{align}
+y &= e^x + \sqrt{x} \\
+\frac{dy}{dx} &= e^x + \frac{1}{2}x^{-1/2} 
+\end{align}
+
+I can also write greek letters is this: $\alpha\beta\Gamma\delta\sigma\zeta\xi$.Also, \LaTeX{} uses some special characters to denote things like equations so to display them normally you need to put a $\backslash$ before the character (e.g. \$, \%) although the backslash character itself is even more special. You'll probably also want to include figures in your lab report. Figures are tricky business in \LaTeX{}, but seee Fig. \ref{fig:example} as an exmaple of how to create and reference them. You can also reference equations: see Equation \ref{eq:formula}.  
+
+\begin{figure}[!h]
+\center
+\includegraphics[scale=0.5]{example_fig.pdf}
+\caption {A hastliy constructed image to show how to include a figure in a lab report.} %always put captions before labels or else your figures won't get referenced properly
+\label{fig:example}
+\end{figure}
+
+\section{Another Section}
+You'll want to break up your report into sections to improve the clarity and strucutre of your paper.
+\subsection{Subsections}
+You can even use subsections if you want.
+\subsubsection{Yes these exist}
+Yup.
+
+\section{Tables}
+Table \ref{tab:example} shows how it can organize your results.
+\begin{table}[!h]
+\center
+\begin{tabular}{|c|c|}
+\hline
+Left & Right \\
+\hline
+Bottom Left & $x^2$ \\
+\hline
+\end{tabular}
+\caption{A basic 2x2 table} %same for tables, put this first
+\label{tab:example}
+\end{table}
+
+
+\end{document}

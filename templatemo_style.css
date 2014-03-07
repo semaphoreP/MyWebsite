@@ -219,8 +219,8 @@ img { margin: 0; padding: 0; border: none }
 }
 
 .overlay_gray{
-	background: rgb(64, 64, 64); /* fallback color */
-	background: rgba(24, 24, 24, 0.87);
+	background: rgb(8, 8, 8); /* fallback color */
+	background: rgba(8, 8, 8, 0.87);
 }
 
 .section_title{
@@ -238,63 +238,14 @@ img { margin: 0; padding: 0; border: none }
 	padding: 0px 8px 0px 8px;
 }
 
-#square_icon {
-	text-align: center;
-	padding: 50px 0 0 0
+.contact {
+	width: 314px;
+	height: 152px;
+	background: url('images/contact_thumb_large_hoverable.png') no-repeat left top;
 }
-
-#social_links {
-	text-align: center;
-	padding: 40px 0 0 0
+.contact:hover {
+	background-position: 0px -152px
 }
-#social_links a {
-	display: block;
-	float: left;
-	width: 48px;
-	height: 48px;
-	margin-left: 12px
-}
-
-#gallery {
-
-}
-
-#gallery li {
-	width: auto;
-	height: auto;
-	float: left;
-	width: 152px;
-	height: 245px;
-	background: none;
-	margin: 0 10px 10px 0;
-}
-#gallery li a {
-	display: block;
-}
-#gallery li a img  { }
-
-#gallery li.no_margin_right { margin-right: 0 }
-
-#contact_form { padding: 0; width: 330px }
-
-#contact_form form { margin: 0px; padding: 0px; }
-
-#contact_form form .input_field { width: 150px; padding: 5px; color: #CCC; border: 1px solid #666;  background: #222; margin-bottom: 10px; }
-
-#contact_form form label { display: block;font-size: 11px }
-
-#contact_form form textarea { 
-	clear: both; 
-	width: 320px; height: 120px; 
-	padding: 5px; 
-	color: #CCC;
-	border: 1px solid #666; 
-	font-family: Arial, Helvetica, sans-serif; 
-	background: #222; 
-	margin-bottom: 10px;
-}
-
-#contact_form form .submit_btn { font-size: 12px; background: #333; color: #CCC; cursor:pointer; border: 1px solid #666; padding: 5px 10px; }
 
 .no_mr { margin-right: 0 }
 .no_mb { margin-bottom: 0 }
