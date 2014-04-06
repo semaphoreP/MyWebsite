@@ -249,3 +249,6 @@ img { margin: 0; padding: 0; border: none }
 
 .no_mr { margin-right: 0 }
 .no_mb { margin-bottom: 0 }
+
+.scrollable{ overflow:auto }
+.fullpage{ height:360px }
