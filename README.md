@@ -1,6 +1,4 @@
-vivamus.github.io
+My Website
 =================
-
-Test personal website
 
 Metro format. 
