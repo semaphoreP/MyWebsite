@@ -51,6 +51,7 @@ a.header { display: block; font-weight: 700 }
 
 .half { width: 380px }
 
+.h15 { height: 15px }
 .h20 { height: 20px }
 .h40 { height: 40px }
 
@@ -67,7 +68,7 @@ img { margin: 0; padding: 0; border: none }
 #templatemo_header {
 	width: 800px;
 	margin: 0 auto;
-	padding: 30px 0;
+	padding: 30px 0 20px 0;
 }
 
 #templatemo_main {
@@ -95,6 +96,14 @@ img { margin: 0; padding: 0; border: none }
 	
 }
 
+#content > div:target {
+	display: block;
+}
+
+#content >div {
+	display: none;
+}
+
 .section {
 	position:relative;
 	float:left;
@@ -116,12 +125,12 @@ img { margin: 0; padding: 0; border: none }
 
 .nav {
 	width: 800px;
-	height: 47px;
 	margin: auto auto;
-	text-align: center;
+	text-align: left;
 	display: block;
+	padding: 10px 0 15px; 0;
 }
-.nav a.navbar { bottom: 0; width: 44px; height: 46px; background-image: url(images/navbar3.png); text-indent: -20000px; display: inline-block;}
+/*.nav a.navbar { bottom: 0; width: 44px; height: 46px; background-image: url(images/navbar3.png); text-indent: -20000px; display: inline-block;}
 .nav  ul {list-style:none; position: relative; left: 256px; margin: 0 0 0 0; padding: 0; list-style-type: none; width: 308px; height: 46px;}
 .nav  li {float: left;  height: 46px; display: block; }
 .nav a.home_but_wh { background-position: 132px 0px;}
@@ -138,7 +147,55 @@ img { margin: 0; padding: 0; border: none }
 .nav a.teac_but_gr { background-position: 88px 46px;}
 .nav a.code_but_gr { background-position: 44px 46px;}
 .nav a.volu_but_gr { background-position: 264px 46px;}
-.nav a.pape_but_gr { background-position: 308px 46px;}
+.nav a.pape_but_gr { background-position: 308px 46px;}*/
+
+.nav ul {
+	padding: 0;
+	border-radius: 0px;
+	list-style: none;
+	position: relative;
+	display: inline-table
+}
+	.nav ul:after {
+			content: ""; clear: both; display: block;
+	}
+
+.nav ul li {
+	float: left;
+}
+	.nav ul li a {
+		display: block;
+		padding: 10px 50px;
+		color: #fff;
+	}
+	.nav ul li:hover .top_menu {
+		color: #D6D6D6;
+	}
+	.nav ul li:hover > ul {
+		display: block
+	}
+
+.nav ul ul {
+	display: none;
+	padding: 0;
+	border-radius: 0;
+	position: absolute; 
+	top: 100%;
+	z-index: 10;
+}
+	.nav ul ul li {
+		float: none;
+		position: absolute;
+		top: 100%;
+		padding: 0;
+	}
+	.nav ul ul li a {
+		color: #fff
+	}
+		.nav ul ul li a:hover{
+			color: #D6D6D6;
+		}
+
 
 .box { float: left; margin: 0 10px 10px 0 }
 .home_block { position: relative; width: 314px; height: 314px; background: #6B6B6B}
