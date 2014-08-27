@@ -100,7 +100,7 @@ img { margin: 0; padding: 0; border: none }
 	display: block;
 }
 
-#content >div {
+#content > div {
 	display: none;
 }
 
@@ -140,11 +140,22 @@ img { margin: 0; padding: 0; border: none }
 	margin: auto auto;
 	text-align: left;
 	display: block;
-	padding: 10px 0 15px; 0;
+	padding: 10px 0 15px 0;
 }
+
+div .home_but {
+	width: 44px; 
+	height: 46px; 
+	background-image: url(images/navbar3.png);
+	background-position: 132px 0px;
+}
+a.home_but_wh { 
+}
+
 /*.nav a.navbar { bottom: 0; width: 44px; height: 46px; background-image: url(images/navbar3.png); text-indent: -20000px; display: inline-block;}
 .nav  ul {list-style:none; position: relative; left: 256px; margin: 0 0 0 0; padding: 0; list-style-type: none; width: 308px; height: 46px;}
 .nav  li {float: left;  height: 46px; display: block; }
+
 .nav a.home_but_wh { background-position: 132px 0px;}
 .nav a.abou_but_wh { background-position: 220px 0px;}
 .nav a.rese_but_wh { background-position: 176px 0px;}
@@ -160,6 +171,7 @@ img { margin: 0; padding: 0; border: none }
 .nav a.code_but_gr { background-position: 44px 46px;}
 .nav a.volu_but_gr { background-position: 264px 46px;}
 .nav a.pape_but_gr { background-position: 308px 46px;}*/
+
 
 .nav ul {
 	padding: 0;
