@@ -186,12 +186,14 @@ a.home_but_wh {
 
 .nav ul li {
 	float: left;
-	padding: 0px 3px 0px 0px
+	padding: 0px 3px 0px 0px;
+	width: 130px
 }
 	.nav ul li a {
 		display: block;
-		padding: 10px 50px;
+		padding: 10px 10px;
 		color: #fff;
+		text-align: center;
 	}
 	.nav ul li:hover .top_menu {
 		color: #D6D6D6;
