@@ -179,7 +179,7 @@
 				</div></div>
 								
                 <div class="overlay_border"><div class="overlay overlay_gray textblock">
-					<h3>Improved Astrometry and Orbital Parameters of β Pictoris b</h3>
+					<h3>Precise Astrometry and Orbits of Exoplanets</h3>
 					<div class="half left">
 						<div class=" img_fl overlay_lightgray">
 							<!-- 
@@ -188,13 +188,22 @@
 							<img src="images/betpic_orbit.gif"  alt="Wheee!!" title="β Pic b in Motion" width=360/>
 						</div>
                         <center>
-							<h4>Read my <a href="https://arxiv.org/abs/1403.7195">AJ paper</a></h4>
-							<h4>or <a href="docs/posters/2016AAS_betapic_Poster.pdf">AAS Poster</a> (which <a href="https://aas.org/posts/news/2016/01/chambliss-student-poster-awards-aas-227">won a Chambliss medal!</a>)</h4>
+							<h4>Read my <a href="https://arxiv.org/abs/1607.05272">β Pic b paper</a></h4>
+							
+						</center>
+						<div class=" img_fl overlay_lightgray">
+								<img src="images/hr8799_orbit_with_img.png"  alt="" title="HR 8799 Orbits" width=360/>
+						</div>
+						<center>
+							<h4>Read my <a href="https://arxiv.org/abs/1809.04107">HR 8799 paper</a></h4>
+							
 						</center>
 					</div>
 					<div class="half right">
-						<p>I developed a new technique for more precise astrometry of directly imaged exoplanets. This technique is based off the mathematical framework developed by Pueyo (2016) which allows us to forward model the signature of an exoplanet through the data reduction process. It allows us to use artifacts of the data reduction process which we used to consider nuisances to better constrain the position of the planet.  In addition, I developed a Bayesian framework that properly accounts for the correlated nature of the noise in the data with Gaussian process regression, allowing us to obtain an accurate posterior distribution on the location of an exoplanet.</p>
-                        <p>I applied this method on multi-epoch data of β Pictoris b taken with the Gemini Planet Imager. I published <a href="https://arxiv.org/abs/1403.7195">a paper</a> showing that I could fit a Keplerian orbit to my measured astrometry with well-behaved fit residuals. Our measured positions of β Pictoris b were a factor of 2-4 more precise than previously published values that used same data. We also were able to improve some of the orbital parameters by a factor of 2. Using this method, we showed the probability of the planet transiting the star was ruled out at 10-σ confidence. However, the Hill sphere of the planet will transit the star, and we will be monitoring the star in 2017 with both the <a href="http://www.stsci.edu/cgi-bin/get-proposal-info?id=14621&observatory=HST">Hubble Space Telescope</a> and ground based observatories to look for circumplanetary material such as disks, rings, and moons.</p>
+						<p>I developed a new technique to obtain more precise astrometry of directly imaged exoplanets. This technique is based off the mathematical framework developed by Pueyo (2016) which allows us to forward model the signature of an exoplanet through the data reduction process, giving us a more accurate planet model. In addition, I developed a Bayesian framework that properly accounts for the correlated nature of the noise in the data with Gaussian process regression. You can read more about the technique in <a href="https://arxiv.org/abs/1607.05272">this AJ paper</a>.</p>
+                        <p>I demonstrated one milliarcsecond astrometry on β Pictoris b taken with the Gemini Planet Imager. I published <a href="https://arxiv.org/abs/1607.05272">a paper</a> showing that I could fit a Keplerian orbit with well-behaved fit residuals. Our measured astrometry were 2-4 times more precise than previously published values that used same data. We also were able to improve some of the orbital parameters by a factor of 2. Using this method, we showed the probability of the planet transiting the star was ruled out at 10-σ confidence. However, the Hill sphere of the planet transited the star in 2017, and we monitored that transit to look for circumplanetary material.</p>
+						<p>I further extended my orbit characterization work when studying the HR 8799 planetary system. Even with 1-2 mas astrometry, we had short orbital arcs for the four planets, resulting in many degenerate orbital solutions. However, given that these planets are super Jupiters, many of the orbits were not dynamically stable. I took the orbit posteriors from MCMC orbit fits and performed rejection sampling on them by simulating all of them through the REBOUND N-body code and rejecting the unstable configurations. This allowed us to obtain ~5x improvement on the orbital parameters as well as place dynamical upper limits on the planet masses. You can read more about it in <a href="https://arxiv.org/abs/1809.04107">this AJ paper</a>.</p>
+						<p>I am contining to monitor the orbits of these exoplanets as well as others. I also contribute to <a href="https://github.com/sblunt/orbitize">orbitize!</a>, an open-soruce Python package to fit orbits of imaged systems.</p>
 					</div>
 				</div></div>
                 
