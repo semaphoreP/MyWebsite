@@ -296,8 +296,8 @@ a.home_but_wh {
 
 
 .overlay_bluesteel{
-	background: rgb(117, 145, 175); /* fallback color */
-	background: rgba(117, 145, 175, 1);
+	background: rgb(110, 172, 239); /* fallback color */
+	background: rgb(110, 172, 239, 1);
 }
 
 .overlay_orange{
