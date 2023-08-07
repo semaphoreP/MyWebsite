@@ -52,6 +52,9 @@ cite span { font-weight: 400; color: #ccc; }
 a.header { display: block; font-weight: 700 }
 
 .half { width: 392px }
+.quarter {width: 196px }
+.threeq {width : 588px }
+.full {width: 784px }
 
 .h15 { height: 15px }
 .h20 { height: 20px }
@@ -62,6 +65,8 @@ img { margin: 0; padding: 0; border: none }
 .img_nom { display: inline-block; margin-bottom: 15px }
 .img_fl { float: left; margin: 4px 5px 5px 5px }
 .img_fr { float: right; margin: 3px 0 5px 15px }
+
+.img_5marg { margin: 5px 5px 5px 5px }
 .img_overlay{ position: relative;}
 
 .left { float: left }
@@ -131,6 +136,7 @@ img { margin: 0; padding: 0; border: none }
 .section .zceiback{ background: url(images/zcei_soccer_banner.jpg); }
 .section .sofiawing{ background: url(images/SOFIA_wing.jpg); }
 .section .spieposter{ background: url(images/spie_poster_banner.jpg); }
+.section .bobatea{ background: url(images/black_milk_tea.png); }
 .section .pachonsunset{ background: url(images/pachon_sunset_banner.png); }
 .section .hackathon{ background: url(images/hackathon.jpg); }
 .section .bahamacpu{ background: url(images/bahama_computers_banner.jpg); }
@@ -287,6 +293,13 @@ a.home_but_wh {
 	background: rgb(18, 152, 224); /* fallback color */
 	background: rgba(18, 152, 224, 1);
 }
+
+
+.overlay_bluesteel{
+	background: rgb(117, 145, 175); /* fallback color */
+	background: rgba(117, 145, 175, 1);
+}
+
 .overlay_orange{
 	background: rgb(255, 143, 15); /* fallback color */
 	background: rgba(255, 143, 15, 1);
