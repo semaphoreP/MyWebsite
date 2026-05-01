@@ -363,3 +363,68 @@ a.home_but_wh {
 
 .scrollable{ overflow:auto }
 .fullpage{ height:360px }
+
+ /* ── News variables: light mode defaults ── */
+  :root {
+    --news-text-main:   #333;
+    --news-text-muted:  #777;
+    --news-border-row:  #f0f0f0;
+    --news-link:        #3366cc;
+    --news-drawer-bg:   #fff;
+    --news-drawer-top:  #333;
+    --news-drawer-hdrborder: #e8e8e8;
+    --news-year-color:  #999;
+    --news-year-border: #eee;
+    --tag-paper-bg:#e8f0fb;  --tag-paper-fg:#2a55a0;
+    --tag-award-bg:#fdf3dc;  --tag-award-fg:#8a5a00;
+    --tag-member-bg:#e8f7ee; --tag-member-fg:#1d7a3e;
+    --tag-press-bg:#f5e8fb;  --tag-press-fg:#6b2d8b;
+    --tag-talk-bg:#fde8e8;   --tag-talk-fg:#9b2424;
+    --tag-software-bg:#e8f5fb; --tag-software-fg:#1a6880;
+  }
+
+  /* ── Dark mode overrides (add class="dark-mode" to your <body>) ── */
+  body.dark-mode {
+    --news-text-main:  #dcdcdc;
+    --news-text-muted: #888;
+    --news-border-row: rgba(255,255,255,0.07);
+    --news-link:       #7eb3ff;
+    --news-drawer-bg:  #1a1a1a;
+    --news-drawer-top: #444;
+    --news-drawer-hdrborder: rgba(255,255,255,0.10);
+    --news-year-color:  #666;
+    --news-year-border: rgba(255,255,255,0.08);
+    --tag-paper-bg:rgba(80,130,255,0.14);  --tag-paper-fg:#7eb3ff;
+    --tag-award-bg:rgba(255,190,60,0.13);  --tag-award-fg:#f5c842;
+    --tag-member-bg:rgba(60,200,100,0.13); --tag-member-fg:#5ddb8a;
+    --tag-press-bg:rgba(190,80,255,0.13);  --tag-press-fg:#c97dff;
+    --tag-talk-bg:rgba(255,90,90,0.13);    --tag-talk-fg:#ff8a8a;
+    --tag-proposal-bg:rgba(60,190,230,0.13); --tag-software-fg:#5fd0f0;
+  }
+
+  .group-news-section { margin: 28px 0 8px; }
+  .group-news-section h3 { font-size: 1.1rem; font-weight: 700; margin: 0 0 10px; }
+  .news-list { list-style: none; padding: 0; margin: 0; }
+  .news-list li { display: flex; gap: 10px; align-items: baseline; padding: 5px 0; border-bottom: 1px solid var(--news-border-row); font-size: 14px; line-height: 1.5; color: var(--news-text-main); }
+  .news-list li:last-child { border-bottom: none; }
+  .news-date { white-space: nowrap; color: var(--news-text-muted); font-size: 13px; min-width: 76px; flex-shrink: 0; }
+  .news-tag { white-space: nowrap; font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; padding: 1px 6px; border-radius: 3px; flex-shrink: 0; align-self: center; }
+  .tag-paper    { background: var(--tag-paper-bg);    color: var(--tag-paper-fg); }
+  .tag-award    { background: var(--tag-award-bg);    color: var(--tag-award-fg); }
+  .tag-member   { background: var(--tag-member-bg);   color: var(--tag-member-fg); }
+  .tag-press    { background: var(--tag-press-bg);    color: var(--tag-press-fg); }
+  .tag-talk     { background: var(--tag-talk-bg);     color: var(--tag-talk-fg); }
+  .tag-proposal { background: var(--tag-proposal-bg); color: var(--tag-software-fg); }
+  .news-text { flex: 1; }
+  .news-text a { color: var(--news-link); }
+  .news-toggle-wrap { margin-top: 8px; font-size: 13px; }
+  /* Year accordion */
+  .news-archive { margin-top: 4px; }
+  .news-year-btn { display: flex; align-items: center; gap: 6px; background: none; border: none; padding: 7px 0; width: 100%; cursor: pointer; font-family: inherit; text-align: left; border-top: 1px solid var(--news-border-row); color: var(--news-text-muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; transition: color 0.15s; }
+  .news-year-btn:hover { color: var(--news-text-main); }
+  .news-year-arrow { display: inline-block; font-size: 9px; line-height: 1; transition: transform 0.2s ease; flex-shrink: 0; }
+  .news-year-btn[aria-expanded="true"] .news-year-arrow { transform: rotate(90deg); }
+  .news-year-count { margin-left: auto; font-size: 11px; font-weight: 400; color: var(--news-text-muted); opacity: 0.6; }
+  .news-year-items { overflow: hidden; display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.25s ease; }
+  .news-year-items.open { grid-template-rows: 1fr; }
+  .news-year-items-inner { min-height: 0; }
