@@ -204,7 +204,17 @@
 
                 <div class="overlay_border"><div class="overlay overlay_gray textblock">
                     <h3>Exoplanet Imaging with Modern Computational Techniques</h3>
-                    <p>In collaboration with researchers in computational imaging, my group is developing new paradigms for how to see the faint exoplanet next to the glare of the bright host star. We are buidlling digital twins of exoplanet imaging instruments, physics-based models that reproduce how starlight and planet light travel through a telescope to form an image. We use modern computational techniques, including automatic differentiation and gradient-based optimization, to optimizing millions of physical degrees of freedom in our models efficiently (~30 minutes on a single GPU). We published <a href="https://ieeexplore.ieee.org/document/10824793">a proof-of-concept of this technique</a> using simulated JWST NIRCAM data. Stay tuned for the results on real JWST data!</p>
+                    <div class="half left">
+                        <p>In collaboration with researchers in computational imaging, my group is developing digital twins of exoplanet imaging telescopes: physics-based models that reproduce how light propagates through a telescope to form an image. This allows us to account for instabilities that arise in the telescope during science observations.</p>
+                        <p>Our method, Physics-based Learning for Imaging Planets (FLIP), uses automatic differentiation and gradient-based optimization to efficiently fit millions of physical degrees of freedom (in ~30 minutes on a single GPU) and subtract the host star's glare. Building on our <a href="https://ieeexplore.ieee.org/document/10824793">proof of concept using simulated JWST data</a>, we demonstrated FLIP on <a href="https://www.nature.com/articles/s41586-026-11213-z">real JWST observations in a study published in Nature</a>. FLIP improved sensitivity by factors of 2&ndash;15 over standard techniques and revealed the known planet 51 Eri b at 4.3 microns, where previous work with conventional processing could not detect it. Our work was featured in this <a href="https://news.northwestern.edu/stories/2026/11/hidden-planet-emerges-from-the-glare">Northwestern press release</a>. Stay tuned for more results from JWST and for applications to other observatories.</p>
+                    </div>
+                    <div class="half right cent">
+                        <video width="360" controls preload="none" loop playsinline poster="images/movies/flip_51eri_thumb.png" aria-label="FLIP subtracts starlight to reveal 51 Eridani b in JWST observations">
+                            <source src="images/movies/flip_51eri.mp4" type="video/mp4">
+                            Your browser does not support this video. <a href="images/movies/flip_51eri.mp4" download>Download the MP4</a> to watch it.
+                        </video>
+                        <h5>FLIP reveals 51 Eri b in JWST data.<br />Visualization: Rodrigo Ferrer-Chavez<br /><a href="images/movies/flip_51eri.mp4" download>Download the MP4</a></h5>
+                    </div>
                 </div></div>
 
                 <div class="clear h15"></div>
@@ -352,6 +362,7 @@
 				<div class="overlay_border"><div class="left overlay overlay_gray"> 
 					<ul class="squarebullet spacing">
 					<h4>BOBA Group Publications (Selected)</h4>
+					<li><b>Ferrer-Chavez, R.</b>, <b>Wang, J. J.</b>, Bouman, K. L., et al. (2026) Imaging exoplanets below the telescope stability limit. <a href="https://www.nature.com/articles/s41586-026-11213-z">Nature, 659, 58&ndash;62</a>.</li>
 					<li><b>Ferrer-Chavez, R.</b>, <b>Wang, J. J.</b>, Wagner, K., et al. (2026) The JWST Sub-Jupiters Survey: Direct Imaging Discovery of a Giant Planet and a Debris Disk Around the Young M-dwarf RX J0534.0-0221. <a href="https://arxiv.org/abs/2609.20748">ApJL, 1010, L19</a>.</li>
 					<li><b>Chavez, A.</b>, <b>Wang, J. J.</b>, Bailey, V. P., et al. (2026) The Roman Coronagraph Community Participation Program: data reduction pipeline astrometric calibration. <a href="https://arxiv.org/abs/2608.17985">Proc. SPIE, 14145, 141454T</a>.</li>
 					<li><b>Hsu, C.</b>, <b>Wang, J. J.</b>, Xuan, J. W., et al. (2026) Distinct Rotational Evolution of Giant Planets and Brown Dwarf Companions. <a href="https://arxiv.org/abs/2601.05976">AJ, in press</a>.</li>
@@ -455,6 +466,11 @@
 				<!-- RECENT NEWS: edit items here. Keep sorted newest-first.          -->
 				<!-- Tag classes: tag-paper  tag-award  tag-member  tag-press  tag-talk  tag-software -->
 				<ul class="news-list" id="news-recent">
+					<li>
+					<span class="news-date">Nov 2026</span>
+					<span class="news-tag tag-press">Press</span>
+					<span class="news-text">Rodrigo's FLIP method for revealing planets hidden in JWST data featured in <a href="https://news.northwestern.edu/stories/2026/11/hidden-planet-emerges-from-the-glare">Northwestern News</a>.</span>
+					</li>
 					<li>
 					<span class="news-date">Oct 2026</span>
 					<span class="news-tag tag-paper">Paper</span>
